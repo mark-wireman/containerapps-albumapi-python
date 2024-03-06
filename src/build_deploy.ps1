@@ -38,7 +38,7 @@ Set-Location "$workingDirOverride"
 Write-Output "Running script as an admin."
 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-Install-Module -Name Az.App CurrentUser -Repository PSGallery -Force
+#Install-Module -Name Az.App CurrentUser -Repository PSGallery -Force
 Register-AzResourceProvider -ProviderNamespace Microsoft.App -AsJob
 Register-AzResourceProvider -ProviderNamespace Microsoft.OperationalInsights -AsJob
 
