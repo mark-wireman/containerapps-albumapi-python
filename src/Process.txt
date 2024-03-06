@@ -1,0 +1,806 @@
+**********************
+PowerShell transcript start
+Start time: 20240306104842
+Username: TABLET-UR0D4CJH\mark_
+RunAs User: TABLET-UR0D4CJH\mark_
+Configuration Name: 
+Machine: TABLET-UR0D4CJH (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoProfile -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\mark_\.vscode\extensions\ms-vscode.powershell-2024.0.0\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2024.0.0' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'c:\Users\mark_\.vscode\extensions\ms-vscode.powershell-2024.0.0\modules' -EnableConsoleRepl -StartupBanner "PowerShell Extension v2024.0.0
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/vscode-powershell
+Type 'help' to get help.
+" -LogLevel 'Normal' -LogPath 'c:\Users\mark_\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\logs\1709735835-687ba046-76e5-4339-afc2-ad74b17299ca1709735832819\EditorServices.log' -SessionDetailsPath 'c:\Users\mark_\AppData\Roaming\Code\User\globalStorage\ms-vscode.powershell\sessions\PSES-VSCode-25396-601151.json' -FeatureFlags @() 
+Process ID: 11824
+PSVersion: 7.4.1
+PSEdition: Core
+GitCommitId: 7.4.1
+OS: Microsoft Windows 10.0.22631
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is Process.txt
+param: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy.ps1:4:1
+Line |
+   4 |  param(
+     |  ~~~~~
+     | The term 'param' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+param: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy.ps1:4:1
+Line |
+   4 |  param(
+     |  ~~~~~
+     | The term 'param' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+]633;E;.\x5cbuild_deploy.ps1;]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="param"
+>> TerminatingError(): "The pipeline has been stopped."
+>> CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="Start-Transcript"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Start-Transcript                                   7.0.0.0    Microsoft.PowerShell.Host
+
+PS>CommandInvocation(Get-Help): "Get-Help"
+>> ParameterBinding(Get-Help): name="Name"; value="Start-Transcript"
+>> ParameterBinding(Get-Help): name="Online"; value="False"
+>> ParameterBinding(Get-Help): name="ErrorAction"; value="Ignore"
+
+NAME
+    Start-Transcript
+
+SYNTAX
+    Start-Transcript [[-Path] <string>] [-Append] [-Force] [-NoClobber] [-IncludeInvocationHeader] [-UseMinimalHeader]
+    [-WhatIf] [-Confirm] [<CommonParameters>]
+
+    Start-Transcript [[-LiteralPath] <string>] [-Append] [-Force] [-NoClobber] [-IncludeInvocationHeader]
+    [-UseMinimalHeader] [-WhatIf] [-Confirm] [<CommonParameters>]
+
+    Start-Transcript [[-OutputDirectory] <string>] [-Append] [-Force] [-NoClobber] [-IncludeInvocationHeader]
+    [-UseMinimalHeader] [-WhatIf] [-Confirm] [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Start-Transcript -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=2096485.
+
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ListImported"; value="True"
+>> ParameterBinding(Get-Command): name="CommandType"; value="Alias"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           Add-AzAccount                                      2.16.0     Az.Accounts
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  7.0.0.0    Microsoft.PowerShell.Utility
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           gerr -> Get-Error
+Alias           Get-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           Get-AzDomain                                       2.16.0     Az.Accounts
+Alias           Get-AzResourceProviderAction                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentOperation              6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentWhatIfResult           6.16.0     Az.Resources
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            7.0.0.0    Microsoft.PowerShell.Management
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           Invoke-AzRest                                      2.16.0     Az.Accounts
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           irm -> Invoke-RestMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           Login-AzAccount                                    2.16.0     Az.Accounts
+Alias           Logout-AzAccount                                   2.16.0     Az.Accounts
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           New-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           New-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           psedit -> Open-EditorFile                          0.2.0      PowerShellEditorServices.Commands
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           Remove-AzAccount                                   2.16.0     Az.Accounts
+Alias           Remove-AzADServicePrincipalCredential              6.16.0     Az.Resources
+Alias           Remove-AzSubscriptionDeployment                    6.16.0     Az.Resources
+Alias           ren -> Rename-Item
+Alias           Resolve-Error                                      2.16.0     Az.Accounts
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           Save-AzProfile                                     2.16.0     Az.Accounts
+Alias           Save-AzSubscriptionDeploymentTemplate              6.16.0     Az.Resources
+Alias           sbp -> Set-PSBreakpoint
+Alias           scb -> Set-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           select -> Select-Object
+Alias           Select-AzSubscription                              2.16.0     Az.Accounts
+Alias           set -> Set-Variable
+Alias           Set-AzADApplication                                6.16.0     Az.Resources
+Alias           Set-AzADServicePrincipal                           6.16.0     Az.Resources
+Alias           Set-AzADUser                                       6.16.0     Az.Resources
+Alias           Set-AzConfig                                       2.16.0     Az.Accounts
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           Stop-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           stz -> Set-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           sv -> Set-Variable
+Alias           tee -> Tee-Object
+Alias           Test-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           type -> Get-Content
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ListImported"; value="True"
+>> ParameterBinding(Get-Command): name="CommandType"; value="Alias"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           Add-AzAccount                                      2.16.0     Az.Accounts
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  7.0.0.0    Microsoft.PowerShell.Utility
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           gerr -> Get-Error
+Alias           Get-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           Get-AzDomain                                       2.16.0     Az.Accounts
+Alias           Get-AzResourceProviderAction                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentOperation              6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentWhatIfResult           6.16.0     Az.Resources
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            7.0.0.0    Microsoft.PowerShell.Management
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           Invoke-AzRest                                      2.16.0     Az.Accounts
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           irm -> Invoke-RestMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           Login-AzAccount                                    2.16.0     Az.Accounts
+Alias           Logout-AzAccount                                   2.16.0     Az.Accounts
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           New-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           New-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           psedit -> Open-EditorFile                          0.2.0      PowerShellEditorServices.Commands
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           Remove-AzAccount                                   2.16.0     Az.Accounts
+Alias           Remove-AzADServicePrincipalCredential              6.16.0     Az.Resources
+Alias           Remove-AzSubscriptionDeployment                    6.16.0     Az.Resources
+Alias           ren -> Rename-Item
+Alias           Resolve-Error                                      2.16.0     Az.Accounts
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           Save-AzProfile                                     2.16.0     Az.Accounts
+Alias           Save-AzSubscriptionDeploymentTemplate              6.16.0     Az.Resources
+Alias           sbp -> Set-PSBreakpoint
+Alias           scb -> Set-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           select -> Select-Object
+Alias           Select-AzSubscription                              2.16.0     Az.Accounts
+Alias           set -> Set-Variable
+Alias           Set-AzADApplication                                6.16.0     Az.Resources
+Alias           Set-AzADServicePrincipal                           6.16.0     Az.Resources
+Alias           Set-AzADUser                                       6.16.0     Az.Resources
+Alias           Set-AzConfig                                       2.16.0     Az.Accounts
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           Stop-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           stz -> Set-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           sv -> Set-Variable
+Alias           tee -> Tee-Object
+Alias           Test-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           type -> Get-Content
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ListImported"; value="True"
+>> ParameterBinding(Get-Command): name="CommandType"; value="Alias"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           Add-AzAccount                                      2.16.0     Az.Accounts
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  7.0.0.0    Microsoft.PowerShell.Utility
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           gerr -> Get-Error
+Alias           Get-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           Get-AzDomain                                       2.16.0     Az.Accounts
+Alias           Get-AzResourceProviderAction                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentOperation              6.16.0     Az.Resources
+Alias           Get-AzSubscriptionDeploymentWhatIfResult           6.16.0     Az.Resources
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            7.0.0.0    Microsoft.PowerShell.Management
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           Invoke-AzRest                                      2.16.0     Az.Accounts
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           irm -> Invoke-RestMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           Login-AzAccount                                    2.16.0     Az.Accounts
+Alias           Logout-AzAccount                                   2.16.0     Az.Accounts
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           New-AzADServicePrincipalCredential                 6.16.0     Az.Resources
+Alias           New-AzSubscriptionDeployment                       6.16.0     Az.Resources
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           psedit -> Open-EditorFile                          0.2.0      PowerShellEditorServices.Commands
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           Remove-AzAccount                                   2.16.0     Az.Accounts
+Alias           Remove-AzADServicePrincipalCredential              6.16.0     Az.Resources
+Alias           Remove-AzSubscriptionDeployment                    6.16.0     Az.Resources
+Alias           ren -> Rename-Item
+Alias           Resolve-Error                                      2.16.0     Az.Accounts
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           Save-AzProfile                                     2.16.0     Az.Accounts
+Alias           Save-AzSubscriptionDeploymentTemplate              6.16.0     Az.Resources
+Alias           sbp -> Set-PSBreakpoint
+Alias           scb -> Set-Clipboard                               7.0.0.0    Microsoft.PowerShell.Management
+Alias           select -> Select-Object
+Alias           Select-AzSubscription                              2.16.0     Az.Accounts
+Alias           set -> Set-Variable
+Alias           Set-AzADApplication                                6.16.0     Az.Resources
+Alias           Set-AzADServicePrincipal                           6.16.0     Az.Resources
+Alias           Set-AzADUser                                       6.16.0     Az.Resources
+Alias           Set-AzConfig                                       2.16.0     Az.Accounts
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           Stop-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           stz -> Set-TimeZone                                7.0.0.0    Microsoft.PowerShell.Management
+Alias           sv -> Set-Variable
+Alias           tee -> Tee-Object
+Alias           Test-AzSubscriptionDeployment                      6.16.0     Az.Resources
+Alias           type -> Get-Content
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="AxInstUI.exe"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     AxInstUI.exe                                       10.0.2262… C:\WINDOWS\system32\AxInstUI.exe
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="ac"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           ac -> Add-Content
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az.cmd"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="zenmap.exe"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     zenmap.exe                                         1.0.0.1    C:\Program Files (x86)\Nmap\zenmap.exe
+
+PS>TerminatingError(Get-Command): "Cannot validate argument on parameter 'Name'. The argument is null, empty, or an element of the argument collection contains a null value. Supply a collection that does not contain any null values and then try the command again."
+PS>.\build_deploy_cshar.ps1
+.\build_deploy_cshar.ps1: The term '.\build_deploy_cshar.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+.\build_deploy_cshar.ps1: The term '.\build_deploy_cshar.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+]633;E;.\x5cbuild_deploy_cshar.ps1;]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>.\build_deploy_csharp.ps1
+
+
+
+
+
+
+
+Set-Location: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:20:1
+Line |
+  20 |  cd code-to-cloud-csharp/src
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp\src' because it does not exist.
+Set-Location: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:20:1
+Line |
+  20 |  cd code-to-cloud-csharp/src
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp\src' because it
+     | does not exist.
+
+
+
+
+
+
+]633;E;.\x5cbuild_deploy_csharp.ps1;]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="az"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     az.cmd                                             0.0.0.0    C:\Program Files\Microsoft SDKs\Azure\CL…
+
+PS>.\build_deploy_csharp.ps1
+
+
+
+
+
+
+Remove-Item: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:17:1
+Line |
+  17 |  Remove-Item "code-to-cloud-csharp"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp' because it does not exist.
+Remove-Item: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:17:1
+Line |
+  17 |  Remove-Item "code-to-cloud-csharp"
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp' because it does
+     | not exist.
+
+
+Set-Location: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:21:1
+Line |
+  21 |  cd code-to-cloud-csharp/src
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp\src' because it does not exist.
+Set-Location: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:21:1
+Line |
+  21 |  cd code-to-cloud-csharp/src
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\code-to-cloud-csharp\src' because it
+     | does not exist.
+
+
+
+
+
+
+]633;E;.\x5cbuild_deploy_csharp.ps1;]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="git"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     git.exe                                            2.35.1.2   C:\Program Files\Git\cmd\git.exe
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="git"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     git.exe                                            2.35.1.2   C:\Program Files\Git\cmd\git.exe
+
+PS>.\build_deploy_csharp.ps1
+
+
+
+
+
+
+
+
+
+
+
+]633;E;.\x5cbuild_deploy_csharp.ps1;]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>CommandInvocation(Get-Help): "Get-Help"
+>> ParameterBinding(Get-Help): name="Name"; value="Register-AzResourceProvider"
+>> ParameterBinding(Get-Help): name="Online"; value="False"
+>> ParameterBinding(Get-Help): name="ErrorAction"; value="Ignore"
+>> TerminatingError(): "The pipeline has been stopped."
+PS>.\build_deploy_csharp.ps1
+ParserError: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:9:13
+Line |
+   9 |  $LOCATION=""eastus
+     |              ~~~~~~
+     | Unexpected token 'eastus' in expression or statement.
+ParserError: C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src\build_deploy_csharp.ps1:9:13
+Line |
+   9 |  $LOCATION=""eastus
+     |              ~~~~~~
+     | Unexpected token 'eastus' in expression or statement.
+
+]633;E;.\x5cbuild_deploy_csharp.ps1;]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5cmark_\x5cOneDrive\x5crepos\x5cAzure\x5ccode-to-cloud\x5csrcPS C:\Users\mark_\OneDrive\repos\Azure\code-to-cloud\src> ]633;B
+PS>.\build_deploy_csharp.ps1
+
+
+
+
+
+
+
+

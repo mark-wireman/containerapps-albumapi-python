@@ -34,6 +34,7 @@ if ((Test-Admin) -eq $false)  {
 Set-Location "$workingDirOverride"
 ##### END ELEVATE TO ADMIN #####
 
+Start-Transcript -Path "Process.txt"
 # Add actual commands to be executed in elevated mode here:
 Write-Output "Running script as an admin."
 
@@ -123,3 +124,4 @@ $MyApp = New-AzContainerApp $configuration
 # show the app's fully qualified domain name (FQDN).
 $MyApp.IngressFqdn
 
+Stop-Transcript
