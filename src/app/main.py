@@ -3,13 +3,16 @@ from typing import Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+apitoken = "1k45tug4vxzs2187jt"
+secret = "secret1234anotherone4567"
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
-    allow_methods="GET",
+    allow_methods=["GET","POST"],
     allow_headers=["*"]
 )
 
